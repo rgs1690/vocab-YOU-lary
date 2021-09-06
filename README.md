@@ -31,16 +31,16 @@ Make sure your Developer Tools are open at all times while working on this proje
 
 ## Get Started
 Use the checkboxes next to each item to keep track of what you have completed.
-- [ ] Setup your firebase project and create the `.env` file with your keys. (Reference the Firebase videos in CodeTracker if you need help getting started)
-- [ ] Plan your project. Take no more than an hour to plan (ERD, Flow Chart, Postman)
-- [ ] Use the webpack template to create the project on your github account
-- [ ] Make sure you are in your `workspace/foundations/exercises` directory
-- [ ] `git clone YOUR_GITHUB_REPO_LINK`
-- [ ] `cd` into the directory
-- [ ] Run `npm install` to install your dependencies
-- [ ] Type `code .` to open the project in VS Code
-- [ ] `npm start` to start your server
-- [ ] START CODING!
+- [x] Setup your firebase project and create the `.env` file with your keys. (Reference the Firebase videos in CodeTracker if you need help getting started)
+- [] Plan your project. Take no more than an hour to plan (ERD, Flow Chart, Postman)
+- [x] Use the webpack template to create the project on your github account
+- [x] Make sure you are in your `workspace/foundations/exercises` directory
+- [x] `git clone YOUR_GITHUB_REPO_LINK`
+- [x] `cd` into the directory
+- [x] Run `npm install` to install your dependencies
+- [x] Type `code .` to open the project in VS Code
+- [x] `npm start` to start your server
+- [x] START CODING!
 
 # MVP Requirements
 [MVP Wireframe](https://www.figma.com/file/IW4jF3GnzCFLYbEXlgFNIZ/MVP)
