@@ -44,10 +44,10 @@ Use the checkboxes next to each item to keep track of what you have completed.
 
 # MVP Requirements
 [MVP Wireframe](https://www.figma.com/file/IW4jF3GnzCFLYbEXlgFNIZ/MVP)
-- [ ] An ERD of your data
-- [ ] Use Firebase for DB and authentication
-- [ ] Technical Flow chart (timebox this)
-- [ ] The app has a navigation bar
+- [x] An ERD of your data
+- [x] Use Firebase for DB and authentication
+- [x] Technical Flow chart (timebox this)
+- [] The app has a navigation bar
   - [ ] A logo
   - [ ] Logout button
   - [ ] Create Entry
