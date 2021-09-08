@@ -2,7 +2,7 @@ const navBar = () => {
   document.querySelector('#navigation').innerHTML = `
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-4">
     <a class="navbar-brand" href="#">
-        <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        <img src=https://static.macupdate.com/products/33776/l/vocab-logo.webp?v=1568305281" alt="logo" width="60" height="48" class="d-inline-block align-text-top">
         Vocab-YOU-lary
     </a>
         <button
