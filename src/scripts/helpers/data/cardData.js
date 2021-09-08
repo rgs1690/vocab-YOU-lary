@@ -27,5 +27,15 @@ const getSingleCard = (firebaseKey) => new Promise((resolve, reject) => {
     .then((response) => resolve(response.data))
     .catch(reject);
 });
-
-export { getCards, createCard, getSingleCard };
+// UPDATE BOOK
+const updateCard = (cardObj) => new Promise((resolve, reject) => {
+  axios.patch(`${dbUrl}/cards/${cardObj.firebaseKey}.json`, cardObj)
+    .then(() => getCards(cardObj.uid).then(resolve))
+    .catch(reject);
+});
+export {
+  getCards,
+  createCard,
+  getSingleCard,
+  updateCard
+};
