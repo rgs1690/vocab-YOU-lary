@@ -1,4 +1,9 @@
-import { createCard, getSingleCard, updateCard } from '../helpers/data/cardData';
+import {
+  createCard,
+  deleteCard,
+  getSingleCard,
+  updateCard
+} from '../helpers/data/cardData';
 import showCards from '../components/cards';
 import addCardForm from '../forms/addCardForm';
 
@@ -37,6 +42,14 @@ const domEvents = (uid) => {
         uid
       };
       updateCard(cardObj).then(showCards);
+    }
+    // DELETE CARD EVENT
+    if (e.target.id.includes('deleteCard')) {
+      // eslint-disable-next-line no-alert
+      if (window.confirm('Want to delete?')) {
+        const [, id] = e.target.id.split('--');
+        deleteCard(uid, id).then(showCards);
+      }
     }
   });
 };
