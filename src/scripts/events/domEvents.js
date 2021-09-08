@@ -1,5 +1,6 @@
-import { createCard } from '../helpers/data/cardData';
+import { createCard, getSingleCard, updateCard } from '../helpers/data/cardData';
 import showCards from '../components/cards';
+import addCardForm from '../forms/addCardForm';
 
 const domEvents = (uid) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -14,6 +15,28 @@ const domEvents = (uid) => {
         uid
       };
       createCard(cardObj).then((cardsArray) => showCards(cardsArray));
+    }
+    // UPDATE EVENT FOR CARD
+    if (e.target.id.includes('updateCard')) {
+      console.warn('CLICKED UPDATE CARD', e.target.id);
+      const [, firebaseKey] = e.target.id.split('--');
+      getSingleCard(firebaseKey).then((cardObj) => addCardForm(cardObj, uid));
+    }
+
+    // EVENT FOR EDITING BOOK
+    if (e.target.id.includes('edit-card')) {
+      console.warn('CLICKED EDIT CARD BTN', e.target.id);
+      e.preventDefault();
+      const [, firebaseKey] = e.target.id.split('--');
+      const cardObj = {
+        title: document.querySelector('#title').value,
+        definition: document.querySelector('#definition').value,
+        language: document.querySelector('#select-language').value,
+        timeSubmitted: new Date(),
+        firebaseKey,
+        uid
+      };
+      updateCard(cardObj).then(showCards);
     }
   });
 };

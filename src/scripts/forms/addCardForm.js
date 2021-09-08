@@ -24,7 +24,7 @@ const addCardForm = (obj = {}) => {
         </select>
       </div>
         <button type="submit"
-        id="${obj.firebaseKey ? `update-card--${obj.firebaseKey}` : 'submit-card'}" class="btn btn-primary">Submit Vocab Card
+        id="${obj.firebaseKey ? `edit-card--${obj.firebaseKey}` : 'submit-card'}" class="btn btn-primary">Submit Vocab Card
         </button>
     </form>
   
