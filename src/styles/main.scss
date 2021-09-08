@@ -14,3 +14,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+#add-buttons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn-success{
+  margin: 5px;
+}
