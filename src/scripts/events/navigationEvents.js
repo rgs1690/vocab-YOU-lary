@@ -1,6 +1,7 @@
 import signOut from '../helpers/auth/signOut';
 import showCards from '../components/cards';
 import getCards from '../helpers/data/cardData';
+import addCardForm from '../forms/addCardForm';
 
 const navigationEvents = () => {
   // LogOut Button
@@ -10,6 +11,11 @@ const navigationEvents = () => {
   document.querySelector('#allCards')
     .addEventListener('click', () => {
       getCards().then(showCards);
+    });
+  // ADD CARD FORM
+  document.querySelector('#createEntry')
+    .addEventListener('click', () => {
+      addCardForm();
     });
 };
 
