@@ -21,5 +21,11 @@ const createCard = (cardObj) => new Promise((resolve, reject) => {
         .catch(reject);
     });
 });
+// GET SINGLE CARD
+const getSingleCard = (firebaseKey) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/cards/${firebaseKey}.json`)
+    .then((response) => resolve(response.data))
+    .catch(reject);
+});
 
-export { getCards, createCard };
+export { getCards, createCard, getSingleCard };
