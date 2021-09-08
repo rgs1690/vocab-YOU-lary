@@ -4,7 +4,7 @@
         "title": "Flexbox", 
         "definition": "The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities",
         "language": "CSS",
-        "timeSubmitted": "",
+        "timeSubmitted": "Tue Sep 07 2021 19:27:35 GMT-0500 (Central Daylight Time)",
         "uid": "B3okI5Crmdhplh51mfgs9bgS3Vj1"
     },
     "-MTpcliDmrp15A1WIE4U": {
@@ -12,7 +12,7 @@
         "title": "Array.prototype.filter()", 
         "definition": "The filter() method creates a new array with all elements that pass the test implemented by the provided function.",
         "language": "JavaScript",
-        "timeSubmitted": "",
+        "timeSubmitted": "Tue Sep 07 2021 19:28:43 GMT-0500 (Central Daylight Time)",
         "uid": "B3okI5Crmdhplh51mfgs9bgS3Vj1"
     }
 
