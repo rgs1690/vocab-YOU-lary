@@ -1,5 +1,4 @@
 import clearDom from '../helpers/clearDom';
-import selectLanguage from './selectLanguage';
 
 const addCardForm = (obj = {}) => {
   clearDom();
@@ -13,15 +12,23 @@ const addCardForm = (obj = {}) => {
         <label for="definition">Definition:</label>
         <textarea class="form-control" placeholder="Enter definition of vocab entry " id="definition" style="height: 100px" value= "${obj.definition || ''}"></textarea>
       </div>
-      <div class="form-group" id="select-language">
+      <div class="form-group">
+      <label for="language">Select a Language</label>
+      <select name="languages"class="form-control" id="select-language"value= "${obj.language || ''}" required>
+        <option value="">Select a Language</option>
+        <option value="Javascript">Javascript</option>        
+        <option value="CSS">CSS</option>
+        <option value="Python">Python</option>
+        <option value="HTML">HTML</option>
+        <option value="Tech">Tech</option>
+        </select>
       </div>
-      <button type="submit"
-       id="${obj.firebaseKey ? `update-book--${obj.firebaseKey}` : 'submit-book'}" class="btn btn-primary">Submit Vocab Card
-       </button>
+        <button type="submit"
+        id="${obj.firebaseKey ? `update-card--${obj.firebaseKey}` : 'submit-card'}" class="btn btn-primary">Submit Vocab Card
+        </button>
     </form>
   
   `;
-  selectLanguage(`${obj.language || ''}`);
 };
 
 export default addCardForm;

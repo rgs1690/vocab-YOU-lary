@@ -1,16 +1,16 @@
 import signOut from '../helpers/auth/signOut';
 import showCards from '../components/cards';
-import getCards from '../helpers/data/cardData';
+import { getCards } from '../helpers/data/cardData';
 import addCardForm from '../forms/addCardForm';
 
-const navigationEvents = () => {
+const navigationEvents = (uid) => {
   // LogOut Button
   document.querySelector('#logout-button')
     .addEventListener('click', signOut);
   // All Cards
   document.querySelector('#allCards')
     .addEventListener('click', () => {
-      getCards().then(showCards);
+      getCards(uid).then(showCards);
     });
   // ADD CARD FORM
   document.querySelector('#createEntry')
