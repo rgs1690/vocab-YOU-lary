@@ -47,23 +47,23 @@ Use the checkboxes next to each item to keep track of what you have completed.
 - [x] An ERD of your data
 - [x] Use Firebase for DB and authentication
 - [x] Technical Flow chart (timebox this)
-- [] The app has a navigation bar
-  - [ ] A logo
-  - [ ] Logout button
-  - [ ] Create Entry
-  - [ ] Any other options you would like to add
+- [x] The app has a navigation bar
+  - [x] A logo
+  - [x] Logout button
+  - [x] Create Entry
+  - [x] Any other options you would like to add
 
 **The most basic requirement for this project is that a user can:**
-- [ ] Login and Logout of the application
-- [ ] CREATE a vocabulary entry:
-  - [ ] Title
-  - [ ] Definition
-  - [ ] Language/Tech
-  - [ ] Time submitted - Not on form. Handle in your JS
-  - [ ] user ID - Not on form. Pull from User object.
-- [ ] READ entries
-- [ ] UPDATE entries
-- [ ] DELETE entries
+- [x] Login and Logout of the application
+- [x] CREATE a vocabulary entry:
+  - [x] Title
+  - [x] Definition
+  - [x] Language/Tech
+  - [x] Time submitted - Not on form. Handle in your JS
+  - [x] user ID - Not on form. Pull from User object.
+- [x] READ entries
+- [x] UPDATE entries
+- [x] DELETE entries
 - [ ] Filter by language/tech
 - [ ] Style your application using your own creativity!
 
