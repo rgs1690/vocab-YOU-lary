@@ -33,9 +33,19 @@ const updateCard = (cardObj) => new Promise((resolve, reject) => {
     .then(() => getCards(cardObj.uid).then(resolve))
     .catch(reject);
 });
+// DELETE CARD
+const deleteCard = (uid, firebaseKey) => new Promise((resolve, reject) => {
+  axios.delete(`${dbUrl}/cards/${firebaseKey}.json`)
+    .then(() => {
+      getCards(uid).then(resolve);
+    })
+    .catch(reject);
+});
+
 export {
   getCards,
   createCard,
   getSingleCard,
-  updateCard
+  updateCard,
+  deleteCard
 };
