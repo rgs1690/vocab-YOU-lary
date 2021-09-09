@@ -2,7 +2,8 @@ import {
   createCard,
   deleteCard,
   getSingleCard,
-  updateCard
+  updateCard,
+  getCards
 } from '../helpers/data/cardData';
 import showCards from '../components/cards';
 import addCardForm from '../forms/addCardForm';
@@ -51,7 +52,19 @@ const domEvents = (uid) => {
         deleteCard(uid, id).then(showCards);
       }
     }
+    // FILTER BTNS
+    const filterLanguages = (array, language) => array.filter((card) => card.language === language);
+    // move filter languages to its own file once it works
+    if (e.target.id.includes('Javascript')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        console.warn(userCards);
+        const jsCards = filterLanguages(userCards, e.target.id);
+        console.warn(e.target.id);
+        console.warn(jsCards);
+        showCards(jsCards);
+      });
+    }
   });
 };
-
 export default domEvents;
