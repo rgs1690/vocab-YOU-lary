@@ -7,6 +7,7 @@ import {
 } from '../helpers/data/cardData';
 import showCards from '../components/cards';
 import addCardForm from '../forms/addCardForm';
+import filterLanguages from '../components/filterLanguages';
 
 const domEvents = (uid) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -53,8 +54,7 @@ const domEvents = (uid) => {
       }
     }
     // FILTER BTNS
-    const filterLanguages = (array, language) => array.filter((card) => card.language === language);
-    // move filter languages to its own file once it works
+
     if (e.target.id.includes('Javascript')) {
       e.preventDefault();
       getCards(uid).then((userCards) => {
@@ -63,6 +63,42 @@ const domEvents = (uid) => {
         console.warn(e.target.id);
         console.warn(jsCards);
         showCards(jsCards);
+      });
+    }
+    if (e.target.id.includes('CSS')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        console.warn(userCards);
+        const cssCards = filterLanguages(userCards, e.target.id);
+        console.warn(e.target.id);
+        showCards(cssCards);
+      });
+    }
+    if (e.target.id.includes('HTML')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        console.warn(userCards);
+        const htmlCards = filterLanguages(userCards, e.target.id);
+        console.warn(e.target.id);
+        showCards(htmlCards);
+      });
+    }
+    if (e.target.id.includes('Python')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        console.warn(userCards);
+        const pythonCards = filterLanguages(userCards, e.target.id);
+        console.warn(e.target.id);
+        showCards(pythonCards);
+      });
+    }
+    if (e.target.id.includes('Tech')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        console.warn(userCards);
+        const techCards = filterLanguages(userCards, e.target.id);
+        console.warn(e.target.id);
+        showCards(techCards);
       });
     }
   });
