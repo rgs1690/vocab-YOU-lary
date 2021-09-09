@@ -3,8 +3,8 @@
 
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: rgb(37, 83, 18);
+  color: rgb(79, 11, 100);
   text-align: center;
   margin-top: 100px;
 }
@@ -23,3 +23,28 @@ body {
 .btn-success{
   margin: 5px;
 }
+#form-container{
+  color: white;
+}
+.card{
+  margin-bottom: 15px;
+}
+#form-container{
+  display:block;
+}
+#submitCardForm {
+  width: 1000px;
+  display: inline-block;
+  text-align: center;
+}
+.btn-primary {
+  margin: 10px;
+}
+#navbarNav {
+  width: 100%;
+  display: flex;
+ flex-wrap: wrap;
+  }
+#logout-button {
+   margin-left: 850px;
+  }

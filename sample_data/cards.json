@@ -11,7 +11,7 @@
         "firebaseKey": "-MTpcliDmrp15A1WIE4U",
         "title": "Array.prototype.filter()", 
         "definition": "The filter() method creates a new array with all elements that pass the test implemented by the provided function.",
-        "language": "JavaScript",
+        "language": "Javascript",
         "timeSubmitted": "Tue Sep 07 2021 19:28:43 GMT-0500 (Central Daylight Time)",
         "uid": "B3okI5Crmdhplh51mfgs9bgS3Vj1"
     }

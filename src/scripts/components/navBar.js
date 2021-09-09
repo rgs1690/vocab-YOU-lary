@@ -26,7 +26,9 @@ const navBar = () => {
             <li class="nav-item">
               <a class="nav-link" href="#" id="createEntry">Create Entry</a>
             </li>
-          <div id="logout-button"></div>
+            <li class="logout" id="logout-button">
+            </li>
+          </ul>
         </div>
       </nav>
     `;
