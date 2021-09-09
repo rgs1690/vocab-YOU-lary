@@ -26,3 +26,25 @@ body {
 #form-container{
   color: white;
 }
+.card{
+  margin-bottom: 15px;
+}
+#form-container{
+  display:block;
+}
+#submitCardForm {
+  width: 1000px;
+  display: inline-block;
+  text-align: center;
+}
+.btn-primary {
+  margin: 10px;
+}
+#navbarNav {
+  width: 100%;
+  display: flex;
+ flex-wrap: wrap;
+  }
+#logout-button {
+   margin-left: 850px;
+  }
