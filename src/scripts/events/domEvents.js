@@ -2,10 +2,12 @@ import {
   createCard,
   deleteCard,
   getSingleCard,
-  updateCard
+  updateCard,
+  getCards
 } from '../helpers/data/cardData';
 import showCards from '../components/cards';
 import addCardForm from '../forms/addCardForm';
+import filterLanguages from '../components/filterLanguages';
 
 const domEvents = (uid) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -51,7 +53,54 @@ const domEvents = (uid) => {
         deleteCard(uid, id).then(showCards);
       }
     }
+    // FILTER BTNS
+
+    if (e.target.id.includes('Javascript')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        console.warn(userCards);
+        const jsCards = filterLanguages(userCards, e.target.id);
+        console.warn(e.target.id);
+        console.warn(jsCards);
+        showCards(jsCards);
+      });
+    }
+    if (e.target.id.includes('CSS')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        console.warn(userCards);
+        const cssCards = filterLanguages(userCards, e.target.id);
+        console.warn(e.target.id);
+        showCards(cssCards);
+      });
+    }
+    if (e.target.id.includes('HTML')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        console.warn(userCards);
+        const htmlCards = filterLanguages(userCards, e.target.id);
+        console.warn(e.target.id);
+        showCards(htmlCards);
+      });
+    }
+    if (e.target.id.includes('Python')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        console.warn(userCards);
+        const pythonCards = filterLanguages(userCards, e.target.id);
+        console.warn(e.target.id);
+        showCards(pythonCards);
+      });
+    }
+    if (e.target.id.includes('Tech')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        console.warn(userCards);
+        const techCards = filterLanguages(userCards, e.target.id);
+        console.warn(e.target.id);
+        showCards(techCards);
+      });
+    }
   });
 };
-
 export default domEvents;

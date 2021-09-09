@@ -2,6 +2,11 @@ import clearDom from '../helpers/clearDom';
 
 const showCards = (array) => {
   clearDom();
+  document.querySelector('#add-buttons').innerHTML += '<button class="btn btn-success btn-lg mb-4" id="Javascript">Javascript</button>';
+  document.querySelector('#add-buttons').innerHTML += '<button class="btn btn-success btn-lg mb-4" id="CSS">CSS</button>';
+  document.querySelector('#add-buttons').innerHTML += '<button class="btn btn-success btn-lg mb-4" id="HTML">HTML</button>';
+  document.querySelector('#add-buttons').innerHTML += '<button class="btn btn-success btn-lg mb-4" id="Python">Python</button>';
+  document.querySelector('#add-buttons').innerHTML += '<button class="btn btn-success btn-lg mb-4" id="Tech">Tech</button>';
   array.forEach((item) => {
     document.querySelector('#view').innerHTML += `
     <div class="card" style="width: 18rem;">
