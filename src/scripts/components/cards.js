@@ -7,6 +7,18 @@ const showCards = (array) => {
   document.querySelector('#add-buttons').innerHTML += '<button class="btn btn-success btn-lg mb-4" id="HTML">HTML</button>';
   document.querySelector('#add-buttons').innerHTML += '<button class="btn btn-success btn-lg mb-4" id="Python">Python</button>';
   document.querySelector('#add-buttons').innerHTML += '<button class="btn btn-success btn-lg mb-4" id="Tech">Tech</button>';
+  document.querySelector('#sort-container').innerHTML += ` 
+  <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Sort Vocabulary Cards
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a id="sortTitle" class="dropdown-item" href="#">Alphabetically</a></li>
+    <li><a id="sortNew" class="dropdown-item" href="#">Newest</a></li>
+    <li><a id="sortOld" class="dropdown-item" href="#">Oldest</a></li>
+  </ul>
+</div>`;
   array.forEach((item) => {
     document.querySelector('#view').innerHTML += `
     <div class="card" style="width: 18rem;">

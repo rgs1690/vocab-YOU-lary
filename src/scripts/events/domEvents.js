@@ -8,6 +8,7 @@ import {
 import showCards from '../components/cards';
 import addCardForm from '../forms/addCardForm';
 import filterLanguages from '../components/filterLanguages';
+import { orderByTitle } from '../components/sortCards';
 
 const domEvents = (uid) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -99,6 +100,13 @@ const domEvents = (uid) => {
         const techCards = filterLanguages(userCards, e.target.id);
         console.warn(e.target.id);
         showCards(techCards);
+      });
+    }
+    if (e.target.id.includes('sortTitle')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        orderByTitle(userCards);
+        showCards(userCards);
       });
     }
   });
