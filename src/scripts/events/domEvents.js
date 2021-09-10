@@ -8,6 +8,7 @@ import {
 import showCards from '../components/cards';
 import addCardForm from '../forms/addCardForm';
 import filterLanguages from '../components/filterLanguages';
+import { orderByTitle, orderByNew, orderByOld } from '../components/sortCards';
 
 const domEvents = (uid) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -99,6 +100,27 @@ const domEvents = (uid) => {
         const techCards = filterLanguages(userCards, e.target.id);
         console.warn(e.target.id);
         showCards(techCards);
+      });
+    }
+    if (e.target.id.includes('sortTitle')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        orderByTitle(userCards);
+        showCards(userCards);
+      });
+    }
+    if (e.target.id.includes('sortNew')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        orderByNew(userCards);
+        showCards(userCards);
+      });
+    }
+    if (e.target.id.includes('sortOld')) {
+      e.preventDefault();
+      getCards(uid).then((userCards) => {
+        orderByOld(userCards);
+        showCards(userCards);
       });
     }
   });

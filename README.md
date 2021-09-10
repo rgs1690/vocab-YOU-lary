@@ -64,8 +64,8 @@ Use the checkboxes next to each item to keep track of what you have completed.
 - [x] READ entries
 - [x] UPDATE entries
 - [x] DELETE entries
-- [ ] Filter by language/tech
-- [ ] Style your application using your own creativity!
+- [x] Filter by language/tech
+- [x] Style your application using your own creativity!
 
 ## Stretch 1
 [Stretch 1 Wireframe](https://www.figma.com/file/UC3Gi8HFRkZY8OIMOAUgL4/Stretch-1)
