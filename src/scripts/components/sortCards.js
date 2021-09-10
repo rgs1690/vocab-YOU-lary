@@ -14,10 +14,17 @@ const orderByTitle = (array) => {
 
 const orderByNew = (array) => {
   array.sort((a, b) => {
-    const cardOne = (a.timeSubmitted);
-    const cardTwo = (b.timeSubmitted);
+    const cardOne = new Date(a.timeSubmitted);
+    const cardTwo = new Date(b.timeSubmitted);
+    return cardTwo - cardOne;
+  });
+};
+const orderByOld = (array) => {
+  array.sort((a, b) => {
+    const cardOne = new Date(a.timeSubmitted);
+    const cardTwo = new Date(b.timeSubmitted);
     return cardOne - cardTwo;
   });
 };
 
-export { orderByTitle, orderByNew };
+export { orderByTitle, orderByNew, orderByOld };
