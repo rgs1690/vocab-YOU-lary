@@ -33,5 +33,7 @@ const showCards = (array) => {
     `;
   });
 };
-
-export default showCards;
+const emptyCards = () => {
+  document.querySelector('#view').innerHTML = '<h1>No Items</h1>';
+};
+export { showCards, emptyCards };

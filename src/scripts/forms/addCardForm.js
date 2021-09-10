@@ -6,7 +6,7 @@ const addCardForm = (obj = {}) => {
   <form id="submitCardForm" class="mb-4">
       <div class="form-group">
         <label for="title">Vocab Entry Title:</label>
-        <input type="text" class="form-control" id="title" aria-describedby="cardTitle" placeholder="Enter Vocabulary Title" value="${obj.title || ''}" required>
+        <input type="text" class="form-control" id="title" aria-describedby="cardTitle" placeholder="Enter Vocabulary Title" value="${obj.title || ''}" required />
       </div>
       <div class="form-group">
         <label for="definition">Definition:</label>
@@ -14,7 +14,7 @@ const addCardForm = (obj = {}) => {
       </div>
       <div class="form-group">
       <label for="language">Select a Language</label>
-      <select name="languages"class="form-control" id="select-language"value= "${obj.language || ''}" required>
+      <select name="languages"class="form-control" id="select-language"value= "${obj.language || ''}" required />
         <option value="">Select a Language</option>
         <option value="Javascript">Javascript</option>        
         <option value="CSS">CSS</option>
@@ -24,7 +24,7 @@ const addCardForm = (obj = {}) => {
         </select>
       </div>
         <button type="submit"
-        id="${obj.firebaseKey ? `edit-card--${obj.firebaseKey}` : 'submit-card'}" class="btn btn-primary">Submit Vocab Card
+        id="${obj.firebaseKey ? `edit-card--${obj.firebaseKey}` : 'cardSubmit'}" class="btn btn-primary">Submit Vocab Card
         </button>
     </form>
   

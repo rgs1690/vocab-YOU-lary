@@ -26,8 +26,16 @@ const navBar = () => {
             <li class="nav-item">
               <a class="nav-link" href="#" id="createEntry">Create Entry</a>
             </li>
+            <input
+            class="form-control mr-sm-2"
+            id="search"
+            placeholder="Search Vocab Titles"
+            aria-label="Search"
+          />
+          </li>
             <li class="logout" id="logout-button">
             </li>
+            <li>
           </ul>
         </div>
       </nav>
