@@ -5,7 +5,7 @@ import domEvents from '../../events/domEvents';
 import navigationEvents from '../../events/navigationEvents';
 import { getCards } from '../data/cardData';
 import showCards from '../../components/cards';
-// import formEvents from '../../events/formEvents';
+import formEvents from '../../events/formEvents';
 
 const startApp = (user) => {
   domBuilder();
@@ -13,7 +13,7 @@ const startApp = (user) => {
   logoutButton();
   domEvents(user.uid);
   navigationEvents(user.uid);
-  // formEvents();
+  formEvents(user.uid);
   getCards(user.uid).then(showCards);
 };
 
