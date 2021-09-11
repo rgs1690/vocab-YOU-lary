@@ -74,7 +74,7 @@ Use the checkboxes next to each item to keep track of what you have completed.
 ## Stretch 2
 [Stretch 2 Wireframe](https://www.figma.com/file/UC3Gi8HFRkZY8OIMOAUgL4/Stretch-2)
 - [x] Users can search vocabulary entries
-- [ ] Users can only see the vocabulary entries that they created
+- [x] Users can only see the vocabulary entries that they created
 - [ ] Users can add Language/Tech to the database and refrerence it on their vocabulary entries
 - [ ] Users can only see the Languages/Tech categories that they created
 
