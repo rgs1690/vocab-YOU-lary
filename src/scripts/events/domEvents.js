@@ -5,14 +5,14 @@ import {
   updateCard,
   getCards
 } from '../helpers/data/cardData';
-import showCards from '../components/cards';
+import { showCards } from '../components/cards';
 import addCardForm from '../forms/addCardForm';
 import filterLanguages from '../components/filterLanguages';
 import { orderByTitle, orderByNew, orderByOld } from '../components/sortCards';
 
 const domEvents = (uid) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
-    if (e.target.id.includes('submit-card')) {
+    if (e.target.id.includes('cardSubmit')) {
       console.warn('submit clicked');
       e.preventDefault();
       const cardObj = {
