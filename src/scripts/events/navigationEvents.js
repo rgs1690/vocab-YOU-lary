@@ -1,5 +1,5 @@
 import signOut from '../helpers/auth/signOut';
-import { showCards, emptyCards } from '../components/cards';
+import { showCards } from '../components/cards';
 import { getCards } from '../helpers/data/cardData';
 import addCardForm from '../forms/addCardForm';
 
@@ -20,19 +20,16 @@ const navigationEvents = (uid) => {
 
   // SEARCH
   document.querySelector('#search')
-    .addEventListener('keydown', (e) => {
-      const searchValue = document.querySelector('#search').value.toLowerCase();
-      console.warn(searchValue);
-      // WHEN THE USER PRESSES ENTER, MAKE THE API CALL AND CLEAR THE INPUT
+    .addEventListener('keyup', (e) => {
       if (e.keyCode === 13) {
-        e.preventDefault();
+        const searchValue = document.querySelector('#search').value.toLowerCase();
+        console.warn(searchValue);
         getCards(uid).then((userCards) => {
           const filteredSearch = userCards.filter((card) => card.title.toLowerCase().includes(searchValue)
           || card.definition.toLowerCase().includes(searchValue));
           showCards(filteredSearch);
         });
-      } else (document.querySelector('#search').value = '');
-      emptyCards();
+      }
     });
 };
 export default navigationEvents;
