@@ -29,6 +29,7 @@ const navigationEvents = (uid) => {
           || card.definition.toLowerCase().includes(searchValue));
           showCards(filteredSearch);
         });
+        document.querySelector('#search').value = '';
       }
     });
 };
