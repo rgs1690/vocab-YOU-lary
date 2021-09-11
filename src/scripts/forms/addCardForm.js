@@ -10,7 +10,7 @@ const addCardForm = (obj = {}) => {
       </div>
       <div class="form-group">
         <label for="definition">Definition:</label>
-        <textarea class="form-control" placeholder="Enter definition of vocab entry " id="definition" style="height: 100px" value= "${obj.definition || ''}"></textarea>
+        <textarea class="form-control" placeholder="Enter definition of vocab entry " id="definition" style="height: 100px">${obj.definition || ''}</textarea>
       </div>
       <div class="form-group">
       <label for="language">Select a Language</label>
