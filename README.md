@@ -1,85 +1,36 @@
-# vocab-YOU-lary
+# Vocab-YOU-lary  [![Netlify Status](https://api.netlify.com/api/v1/badges/4ab7e730-7ed3-4cfd-a988-66195e79a991/deploy-status)](https://app.netlify.com/sites/drt-sortinghat/deploys)
+<!-- update the netlify badge above with your own badge that you can find at netlify under settings/general#status-badges -->
 
-In this student assessment, you will be creating an application that allows users to CRUD vocabulary cards, authenticate with Google, and filter.
+Vocab-YOU-lary is a study and teaching tool to keep track of new vocabulary terms in the web development field. 
 
-## Learning Objectives
-- Single Responsibility Principle (each component/function should have one job)
-- Import/Export modules
-- DOM manipulation with Vanilla JS
-- DOM querying with Vanilla JS
-- Representing data as HTML
-- Usage of semantic HTML5 tags
-- Asynchronous Programming
-- Promises 
+[View App](#your-link)
 
-## REMINDER
-This is NOT A TEST. We are not looking for 100% completion, although if you can make it work completely, then wahoo!
 
-What we are looking for is effort, critical thinking about the concepts, creative thinking to bind the concepts together for a solution, and collaboration with your teammates and instruction team.
+## About the User <!-- This is a scaled down user persona -->
+- The ideal user for this application is a teacher or a student who needs to keep track of new vocabulary terms to reference later while learning and teaching web development.
 
-If you only get 50% of it complete, but display the above Core Skills and can demonstrate understanding of the fundamental code concepts, then you are learning and growing - which is what we care about.
+## Features <!-- List your app features using bullets! Do NOT use a paragraph. No one will read that! -->
+- A user can create new vocabulary terms that will record the name of the term, the definition, and the language or technology it belongs to.
+- A user can edit and update all terms.
+- A user can delete any term.
+- A user can filter all their entries by the language or technology it belongs to.
+- A user can sort all entries alphabetically, newest and oldest.
+- A user an search all their entries. 
+- All entries can only be seen by the user that created them.
 
-## Tools To Use:
-- Postman for API testing
-- Firebase for database, rules, and authentication
-- Webpack template (Located in your cohort repo)
-- dbdiagram.io for creating your ERD
-- Figma, google slides, or paper for flow charting your application
-- Axios for requests
+## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
+https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 
-Make sure your Developer Tools are open at all times while working on this project. Use the messages provided in the Console to determine what code needs to be fixed or implemented, and use breakpoints in the Sources tab to step through your code as you debug.
+## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
+- [Check out the deployed site](#your-link)
+- [Wireframes](https://www.figma.com/file/UC3Gi8HFRkZY8OIMOAUgL4/Stretch-2?node-id=0%3A1)
+- [Project Board](https://github.com/rgs1690/vocab-YOU-lary/projects)
 
-## Get Started
-Use the checkboxes next to each item to keep track of what you have completed.
-- [x] Setup your firebase project and create the `.env` file with your keys. (Reference the Firebase videos in CodeTracker if you need help getting started)
-- [] Plan your project. Take no more than an hour to plan (ERD, Flow Chart, Postman)
-- [x] Use the webpack template to create the project on your github account
-- [x] Make sure you are in your `workspace/foundations/exercises` directory
-- [x] `git clone YOUR_GITHUB_REPO_LINK`
-- [x] `cd` into the directory
-- [x] Run `npm install` to install your dependencies
-- [x] Type `code .` to open the project in VS Code
-- [x] `npm start` to start your server
-- [x] START CODING!
 
-# MVP Requirements
-[MVP Wireframe](https://www.figma.com/file/IW4jF3GnzCFLYbEXlgFNIZ/MVP)
-- [x] An ERD of your data
-- [x] Use Firebase for DB and authentication
-- [x] Technical Flow chart (timebox this)
-- [x] The app has a navigation bar
-  - [x] A logo
-  - [x] Logout button
-  - [x] Create Entry
-  - [x] Any other options you would like to add
+## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
+<img width="1148" alt="Your Alt" src="https://user-images.githubusercontent.com/78558344/133506607-b89bc820-8a30-45f5-a788-eaea9f0a4847.png">
+<img width="1148" alt="Your Alt" src="https://user-images.githubusercontent.com/78558344/133506440-85a5f9d5-0552-41f3-82c2-96db847a11f4.png">
 
-**The most basic requirement for this project is that a user can:**
-- [x] Login and Logout of the application
-- [x] CREATE a vocabulary entry:
-  - [x] Title
-  - [x] Definition
-  - [x] Language/Tech
-  - [x] Time submitted - Not on form. Handle in your JS
-  - [x] user ID - Not on form. Pull from User object.
-- [x] READ entries
-- [x] UPDATE entries
-- [x] DELETE entries
-- [x] Filter by language/tech
-- [x] Style your application using your own creativity!
 
-## Stretch 1
-[Stretch 1 Wireframe](https://www.figma.com/file/UC3Gi8HFRkZY8OIMOAUgL4/Stretch-1)
-- [x] Allow users to order entries alphabetically, newest, oldest
-
-## Stretch 2
-[Stretch 2 Wireframe](https://www.figma.com/file/UC3Gi8HFRkZY8OIMOAUgL4/Stretch-2)
-- [x] Users can search vocabulary entries
-- [x] Users can only see the vocabulary entries that they created
-- [ ] Users can add Language/Tech to the database and refrerence it on their vocabulary entries
-- [ ] Users can only see the Languages/Tech categories that they created
-
-## Stretch 3
-[Stretch 3 Wireframe](https://www.figma.com/file/KgbkfaoRd5F8Q4qZ3G2Bg2/Stretch-3)
-- [ ] Users can mark an entry as public or private
-- [ ] If an entry is public, anyone can view it. If it is private, only the user who created it can see it
-- [ ] If an entry is public, any user can copy the entry to their own set of entries and then CRUD on the new/copied entry
+## Contributors
+- [Grace Sutherland](https://github.com/rgs1690)
