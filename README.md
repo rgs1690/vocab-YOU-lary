@@ -3,7 +3,7 @@
 
 Vocab-YOU-lary is a study and teaching tool to keep track of new vocabulary terms for the software engineering and web development fields. 
 
-[View App](vocab-you-lary-rgs.netlify.app)
+[View App](https://vocab-you-lary-rgs.netlify.app)
 
 ## Get Started 
 ```
@@ -27,7 +27,7 @@ $ cd vocab-YOU-lary
 https://www.loom.com/share/749e2239eb7b4f1d9fd9647b3f26e8a0
 
 ## Relevant Links
-- [Check out the deployed site](vocab-you-lary-rgs.netlify.app)
+- [Check out the deployed site](https://vocab-you-lary-rgs.netlify.app)
 - [Wireframes](https://www.figma.com/file/UC3Gi8HFRkZY8OIMOAUgL4/Stretch-2?node-id=0%3A1)
 - [Project Board](https://github.com/rgs1690/vocab-YOU-lary/projects)
 
